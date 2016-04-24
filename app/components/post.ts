@@ -17,8 +17,6 @@ import {VotesComponent} from '../components/votes';
 export class PostComponent implements OnInit {
     @Input() post: models.Post;
 
-    constructor() { }
-
     ngOnInit() { }
 
 }

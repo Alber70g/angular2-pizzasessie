@@ -1,0 +1,18 @@
+{
+  "firebase": "angular2-pizzasessie",
+  "public": ".",
+  "ignore": [
+    ".vscode",
+    "**/app/**",
+    "**/images/**",
+    "**/node_modules/**",
+    "**/typings/**",
+    ".gitignore",
+    "firebase.json",
+    "package.json",
+    "README.md",
+    "tsconfig.json",
+    "typings.json",
+    "webpack.config.js"
+  ]
+}

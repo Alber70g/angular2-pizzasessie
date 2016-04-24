@@ -9,7 +9,7 @@ import { Component, Input, Output, OnInit } from 'angular2/core';
           <span class="downvote" (click)="vote(-1)">v</span>
       </div>
     `,
-    styles: [`
+  styles: [`
       .positiveVote {
         color: white;
         background-color: green;        
@@ -23,6 +23,7 @@ import { Component, Input, Output, OnInit } from 'angular2/core';
 })
 export class VotesComponent implements OnInit {
   myVote: number = 0;
+  _ref: Firebase;
 
   @Input() voteCount: number;
 
@@ -31,6 +32,7 @@ export class VotesComponent implements OnInit {
       if (this.myVote < 1) {
         this.myVote = this.myVote + voteCount;
         this.voteCount = this.voteCount + voteCount;
+        this._ref.update({})
       }
     } else {
       if (this.myVote > -1) {
