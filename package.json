@@ -4,7 +4,8 @@
   "description": "Angular 2, TypeScript and Webpack",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "deploy": "cp index.html dist/index.html && webpack && firebase deploy && firebase open"
   },
   "license": "ISC",
   "devDependencies": {
