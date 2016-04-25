@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
-    "deploy": "cp index.html dist/index.html && webpack && firebase deploy && firebase open"
+    "deploy": "rm -rf deploy && webpack && mkdir deploy\\dist && cp index.html deploy/ && cp dist/vendor.bundle.js deploy/dist && cp dist/app.bundle.js deploy/dist && firebase deploy && firebase open"
   },
   "license": "ISC",
   "devDependencies": {

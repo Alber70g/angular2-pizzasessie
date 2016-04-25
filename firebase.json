@@ -1,6 +1,6 @@
 {
   "firebase": "angular2-pizzasessie",
-  "public": "app",
+  "public": "deploy",
   "ignore": [
     "**/*.map"
   ]
