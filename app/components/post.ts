@@ -18,7 +18,7 @@ import {VotesComponent} from '../components/votes';
 export class PostComponent implements OnInit {
     @Input() post: models.Post;
     @Input() disableAlert: boolean;
-        
+
     ngOnInit() { }
 
     onVote(vote: {vote: number}) {

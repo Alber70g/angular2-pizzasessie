@@ -29,9 +29,6 @@ import { Observable } from 'rxjs/Observable';
             <button class="waves-effect waves-light btn" (click)="submitNewPost(_newPost)">Submit</button>
           </div>
         </div>
-        <div class="row">
-          
-        </div>
       </form>
     </div>
   `

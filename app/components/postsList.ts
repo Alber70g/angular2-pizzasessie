@@ -10,7 +10,7 @@ import { PostComponent } from '../components/post';
   template: `    
     <ul class="collection with-header">
       <li class="collection-header"><h4>Posts</h4></li>
-      <post *ngFor="#post of posts | async" [post]="post" [disableAlert]="!disableAlert"></post>
+        <post *ngFor="#post of posts | async" [post]="post" [disableAlert]="!disableAlert"></post>
       <label>Disable alert<input type="checkbox" [(ngModel)]="disableAlert" /></label>
     </ul>
     `,
