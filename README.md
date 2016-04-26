@@ -1,3 +1,15 @@
-## Angular2 starter kit with Typescript and Webpack. ##
+# AngularJs vs Angular playground
 
-Checkout this [article](http://www.schempy.com/2016/01/19/angular2_webpack_typescript/) for full documentation.
+1. Clone this repository 
+
+2. Install global and local dependencies
+
+```bash
+$ npm run setup
+```
+
+3. Run 
+
+```bash
+$ npm start
+```
