@@ -5,7 +5,8 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
-    "postinstall": "typings install"
+    "postinstall": "typings install",
+    "deploy": "rm -rf deploy && webpack && mkdir deploy\\dist && cp index.html deploy/ && cp dist/vendor.bundle.js deploy/dist && cp dist/app.bundle.js deploy/dist && firebase deploy && firebase open"
   },
   "license": "ISC",
   "devDependencies": {
@@ -16,7 +17,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "angular2": "^2.0.0-beta.13",
+    "angular2": "^2.0.0-beta.15",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.35.0",
     "firebase": "^2.4.2",
