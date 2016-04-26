@@ -10,5 +10,5 @@ import {FIREBASE_PROVIDERS, defaultFirebase, AngularFire} from 'angularfire2';
 
 bootstrap(AppComponent, [
   FIREBASE_PROVIDERS,
-  defaultFirebase('https://angular2-playground.firebaseio.com')
+  defaultFirebase('https://newfirebaseapp2.firebaseio.com')
 ]);

@@ -1,8 +1,8 @@
 import {Component} from 'angular2/core';
 
-import {PostsListComponent} from './components/postsList';
 import {NavigationComponent} from './components/navigation';
 import {PostformComponent} from './components/postform';
+import {PostsListComponent} from './components/postsList';
 
 @Component({
     selector: 'my-app',
