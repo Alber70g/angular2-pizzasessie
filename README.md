@@ -1,12 +1,19 @@
 # AngularJs vs Angular playground
 
-1. Clone this repository 
+### Clone this repository 
 
-2. Install global and local dependencies
+```bash
+$ git clone https://github.com/Alber70g/angular2-pizzasessie.git
+```
+
+### Install global and local dependencies
+
 ```bash
 $ npm run setup
 ```
-3. Run 
+
+### Run 
+
 ```bash
 $ npm start
 ```
