@@ -5,10 +5,8 @@ import {AppComponent} from './app.component'
 import 'firebase';
 import {FIREBASE_PROVIDERS, defaultFirebase, AngularFire} from 'angularfire2';
 
-import {enableProdMode} from 'angular2/core'; 
-enableProdMode();
-
-
+// import {enableProdMode} from 'angular2/core'; 
+// enableProdMode();
 
 bootstrap(AppComponent, [
   FIREBASE_PROVIDERS,
