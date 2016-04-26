@@ -4,9 +4,6 @@ import {PostsListComponent} from './components/postsList';
 import {NavigationComponent} from './components/navigation';
 import {PostformComponent} from './components/postform';
 
-// Firebase
-import 'firebase';
-
 @Component({
     selector: 'my-app',
     template: `

@@ -1,6 +1,9 @@
 import { Component, OnInit } from 'angular2/core';
 import * as models from '../models';
 
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Observable } from 'rxjs/Observable';
+
 @Component({
   selector: 'postform',
   template: `
@@ -33,21 +36,20 @@ import * as models from '../models';
     </div>
   `
 })
-export class PostformComponent implements OnInit {
+export class PostformComponent {
   _newPost: models.Post = new models.Post();
   
   public posts: models.Post[];
-  private _firebaseUrl: string = "https://angular2-pizzasessie.firebaseio.com/posts";
-  private _postsRef: Firebase;
+  
+  private _posts: FirebaseListObservable<any[]>;
 
-  constructor() {
-    this._postsRef = new Firebase(this._firebaseUrl);
+  constructor(af: AngularFire) {
+    this._posts = af.database.list('/posts');
+    
     this._newPost.voteCount = 0;
   }
 
   submitNewPost(post: models.Post) {
-    this._postsRef.push(post);
+    this._posts.push(post);
   }
-  ngOnInit() { }
-
 }
