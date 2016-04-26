@@ -1,5 +1,5 @@
 {
-  "firebase": "angular2-pizzasessie",
+  "firebase": "angular2-playground",
   "public": "deploy",
   "ignore": [
     "**/*.map"
