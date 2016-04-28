@@ -18,7 +18,7 @@ import { PostComponent } from '../components/post';
   pipes: []
 })
 export class PostsListComponent {
-  posts: Observable<any[]>;
+  posts: Observable<models.Post[]>;
 
   constructor(af: AngularFire) {
     this.posts = af.database.list('/posts');

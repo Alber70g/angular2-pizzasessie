@@ -6,3 +6,6 @@ import 'reflect-metadata';
 
 // Firebase
 import 'firebase';
+
+// Lodash
+import 'lodash';
