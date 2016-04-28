@@ -1,5 +1,9 @@
 # AngularJs vs Angular playground
 
+## Presentation AngularJs vs Angular 2
+
+[http://slides.com/albertgroothedde/deck](http://slides.com/albertgroothedde/deck)
+
 ### Clone this repository 
 
 ```bash
