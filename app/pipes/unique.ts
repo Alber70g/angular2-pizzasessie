@@ -9,8 +9,9 @@ export class UniquePipe implements PipeTransform {
   transform(value: any, args: any[]) : any {
     let propertyName = args[0];
     
-    if(!!propertyName)
+    if(!!propertyName) {
       return _.uniqBy(value, propertyName);
+    }
     
     return _.uniq(value);
   }
