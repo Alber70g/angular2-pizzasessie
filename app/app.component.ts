@@ -10,7 +10,7 @@ import { UniquePipeExampleComponent } from './components/unique-pipe-example';
 @Component({
   selector: 'my-app',
   template: `
-    <navigation></navigation>
+    <navigation class="bordered"></navigation>
     <div class="container">
       <postform class="bordered"></postform>
       <postsList class="bordered"></postsList>
