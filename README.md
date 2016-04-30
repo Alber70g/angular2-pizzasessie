@@ -1,7 +1,6 @@
-# AngularJs vs Angular playground session
+# AngularJs vs Angular 2 playground session
 
-## Presentation AngularJs vs Angular 2
-
+There's a presentation about AngularJs vs Angular 2, which I gave before showing this code:  
 [http://slides.com/albertgroothedde/deck](http://slides.com/albertgroothedde/deck)
 
 ## Getting started
